@@ -1,5 +1,18 @@
 import matplotlib.pyplot as plt
-num=25767898
+num=12345
+
+
+
+
+
+
+
+
+
+
+
+
+
 mylist=[]
 while(num !=1):
   mylist.append(int(num))
