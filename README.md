@@ -1,17 +1,12 @@
 import matplotlib.pyplot as plt
-Num=7
-Score=1
-chubster=1
-while (3>chubster):
-  fig, ax=plt.subplots()
-  ax.scatter(Num, Score)
-  plt.show()
-  if (Num%2)==0:
-    Num=Num*3+1
-    Score=Score+1
-  elif Num==1:
-    Score=Score+1
-    break
+num=25767898
+mylist=[]
+while(num !=1):
+  mylist.append(int(num))
+  if (num%2)==0:
+    num=num/2
   else:
-    Score=Score+1
-    Num=Num/2
+    num=num*3+1
+mylist.append(1) 
+plt.plot(mylist)
+print(mylist)
