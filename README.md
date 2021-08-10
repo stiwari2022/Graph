@@ -12,8 +12,6 @@ num=12345
 
 
 
-
-
 mylist=[]
 while(num !=1):
   mylist.append(int(num))
