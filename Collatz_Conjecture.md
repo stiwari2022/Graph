@@ -1,3 +1,4 @@
+fig=plt.figure(figsize=(15,3))
 import matplotlib.pyplot as plt
 num=12345
 mylist=[]
