@@ -8,6 +8,6 @@ for i,type in enumerate(Name):
     x=GNI[i]
     y=LE[i]
     z=P[i]
-    plt.scatter(x, y, z, color='deepskyblue')
+    plt.scatter(x, y, z, color="deepskyblue")
     plt.text(x, y, type, fontsize=15)
 plt.show()
