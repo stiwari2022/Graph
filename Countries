@@ -10,3 +10,4 @@ for i,type in enumerate(Name):
     z=P[i]
     plt.scatter(x, y, z, color='deepskyblue')
     plt.text(x, y, type, fontsize=15)
+plt.show()
