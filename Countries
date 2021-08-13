@@ -132,3 +132,86 @@ plt.title("Countries")
 plt.xlabel("Income")
 plt.ylabel("Life Expectancy")
 plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+
+Name_Asia=["China"]
+GNI_Asia=[16.8]
+LE_Asia=[76.7]
+P_Asia=[1411]
+
+Name_Africa=["Nigeria"]
+GNI_Africa=[5.2]
+LE_Africa=[54.3]
+P_Africa=[211]
+
+Name_Europe=["Russia"]
+GNI_Europe=[28.3]
+LE_Europe=[28.3]
+P_Europe=[146]
+
+Name_North_America=["United States"]
+GNI_North_America=[66.1]
+LE_North_America=[78.5]
+P_North_America=[333]
+
+Name_South_America=["Brazil"]
+GNI_South_America=[14.9]
+LE_South_America=[75.7]
+P_South_America=[214]
+
+
+
+
+
+fig, ax=plt.subplots(figsize=(7.5,5))
+
+
+
+
+
+for Asia, Asia2 in enumerate(Name_Asia):
+    ax.annotate(Asia2, (GNI_Asia[Asia], LE_Asia[Asia]))
+for Africa, Africa2 in enumerate(Name_Africa):
+    ax.annotate(Africa2, (GNI_Africa[Africa], [Africa]))
+for Europe,type in enumerate(Name_Europe):
+    x_Europe=GNI_Europe[Europe]
+    y_Europe=LE_Europe[Europe]
+    z_Europe=P_Europe[Europe]
+for North_America,type in enumerate(Name_North_America):
+    x_North_America=GNI_North_America[North_America]
+    y_North_America=LE_North_America[North_America]
+    z_North_America=P_North_America[North_America]
+for South_America,type in enumerate(Name_South_America):
+    x_South_America=GNI_South_America[South_America]
+    y_South_America=LE_South_America[South_America]
+    z_South_America=P_South_America[South_America]
+
+    plt.scatter(x_Asia, y_Asia, z_Asia, color="g")
+    plt.text(x_Asia, y_Asia, type, fontsize=15)
+    plt.scatter(x_Africa, y_Africa, z_Africa, color="r")
+    plt.text(x_Africa, y_Africa, type, fontsize=15)
+    plt.scatter(x_Europe, y_Europe, z_Europe, color="b")
+    plt.text(x_Europe, y_Europe, type, fontsize=15)
+    plt.scatter(x_North_America, y_North_America, z_North_America, color="c")
+    plt.text(x_North_America, y_North_America, type, fontsize=15)
+    plt.scatter(x_South_America, y_South_America, z_South_America, color="y")
+    plt.text(x_South_America, y_South_America, type, fontsize=15)
+plt.title("Countries")
+plt.xlabel("Income")
+plt.ylabel("Life Expectancy")
+plt.show()
