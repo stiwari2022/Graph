@@ -11,3 +11,18 @@ while(num !=1):
 mylist.append(1) 
 plt.plot(mylist)
 print(mylist)
+
+
+Suble
+import matplotlib.pyplot as plt
+Name=["China", "India", "US"]
+GNI=[16.8, 6.9, 66.1]
+LE=[76.7, 69.4, 78.5]
+P=[1398, 1366, 328]
+fig, ax=plt.subplots()
+plt.scatter(GNI, LE, P, color="deepskyblue")
+plt.scatter(25, 60, 555, color="green")
+plt.grida
+plt.xlabel("Income")
+plt.ylabel("Life Expectancy")
+plt.show()
