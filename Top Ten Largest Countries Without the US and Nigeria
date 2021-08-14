@@ -5,7 +5,7 @@ Name=["China", "India", "Indonesia", "Pakistan", "Brazil", "Bangladesh", "Russia
 Income=[6.18, 3.17, 2.2, 4.06, 7.52, 2.82, 11.72, 11.68]
 LE=[76.7, 69.4, 71.5, 67.1, 75.7, 72.3, 72.7, 75]
 P=[1411, 1380, 271, 225, 213, 171, 146, 126]
-fig, ax=plt.subplots()
+fig=plt.figure(figsize=(15,10))
 for i,type in enumerate(Name):
   x=Income[i]
   y=LE[i]
