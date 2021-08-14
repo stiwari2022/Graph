@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-Name=["China", "India", "Indonesia", "Pakistan", "Brazil", " Nigeria", "Bangladesh", "Russia", "Mexico"]
+Name=["China", "India", "Indonesia", "Pakistan", "Brazil", "Bangladesh", "Russia", "Mexico"]
 Income=[6.18, 3.17, 2.2, 4.06, 7.52, 2.82, 11.72, 11.68]
 LE=[76.7, 69.4, 71.5, 67.1, 75.7, 72.3, 72.7, 75]
 P=[1411, 1380, 271, 225, 213, 171, 146, 126]
@@ -10,7 +10,7 @@ for i,type in enumerate(Name):
   x=Income[i]
   y=LE[i]
   z=P[i]
-  colors = np.array(["red", "red", "green", "red", "red", "green", "blue", "red", "purple", "green", "red", "blue", "red"])
+  colors = np.array(["red", "red", "red", "red", "green", "red", "purple", "green"])
   plt.scatter(x, y, z, c=colors[i], alpha=0.35)
   plt.text(x, y, type, fontsize=10)
 plt.show()
