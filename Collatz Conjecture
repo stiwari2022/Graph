@@ -1,5 +1,5 @@
-fig=plt.figure(figsize=(15,3))
 import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(15,3))
 num=12345
 mylist=[]
 while(num !=1):
