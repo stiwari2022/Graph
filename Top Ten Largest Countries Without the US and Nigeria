@@ -13,4 +13,7 @@ for i,type in enumerate(Name):
   colors = np.array(["red", "red", "red", "red", "green", "red", "purple", "green"])
   plt.scatter(x, y, z, c=colors[i], alpha=0.35)
   plt.text(x, y, type, fontsize=10)
+plt.title("Countries")
+plt.xlabel("Income")
+plt.ylabel("Life Expectancy")
 plt.show()
