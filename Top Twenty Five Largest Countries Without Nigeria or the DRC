@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+Name=["China", "India", "US", "Indonesia", "Pakistan", "Brazil", "Bangladesh", "Russia", "Mexico", "Japan", "Ethiopia", "Philippines", "Egypt", "Vietnam"]
+Income=[6.18, 3.17, 43.58, 2.2, 4.06, 7.52, 2.82, 11.72, 11.68, 33.82, 1.11, 2.4, 3.11, 4.78]
+LE=[76.7, 69.4, 78.5, 71.5, 67.1, 75.7, 72.3, 72.7, 75, 84.2, 66.2, 71.1, 71.8, 75.3]
+P=[1411, 1380, 332, 271, 225, 213, 171, 146, 126, 125, 117, 110, 102, 97]
+fig=plt.figure(figsize=(15,10))
+for i,type in enumerate(Name):
+  x=Income[i]
+  y=LE[i]
+  z=P[i]
+  colors = np.array(["red", "red", "green", "red", "red", "green", "red", "purple", "green", "red", "blue", "red", "blue", "red"])
+  plt.scatter(x, y, z, c=colors[i], alpha=0.35)
+  plt.text(x, y, type, fontsize=10)
+plt.show()
