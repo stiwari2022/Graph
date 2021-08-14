@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+fig, ax = plt.subplots()
+Names=["China", "India", "US", "Indonesia", "Pakistan"]
+HDI=[0.761, 0.645, 0.926, 0.718, 0.557]
+plt.title("Countries", fontsize=30)
+plt.xlabel("Income", fontsize=15)
+plt.ylabel("Life Expectancy", fontsize=15)
+plot=plt.bar(Names, HDI, 0.7, color="blue")
+ax.set_facecolor('aliceblue')
+plt.show()
