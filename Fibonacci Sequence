@@ -1,14 +1,19 @@
 import matplotlib.pyplot as plt
 fig=plt.figure(figsize=(15,5))
-Chuble=[]
-Chubster=15
-Chub=0
-Little_Chub=0
-Big_Chub=1
-while(Chub<Chubster):
-  Chuble.append(int(Little_Chub))
-  Big_Chub=Little_Chub+Big_Chub
-  Little_Chub=Big_Chub+Little_Chub
-  Chub=Chub+1
-plt.plot(Chuble)
-print(Chuble)
+Chub=[]
+Chuble=1
+Big_Chub=0
+Little_Chub=1
+Chubni=0
+if Chuble<=0:
+   print("Give a number other than 0")
+else:
+   print("This list has {} numbers:".format(Chuble))
+   while Chubni<Chuble:
+       Chub.append(int(Big_Chub))
+       Chuble=Big_Chub+Little_Chub
+       Big_Chub=Little_Chub
+       Little_Chub=Chuble
+       Chubni+=1
+print (Chub)
+_=plt.plot(Chub)
