@@ -10,10 +10,10 @@ if Chuble<=0:
 else:
    print("This list has {} numbers:".format(Chuble))
    while Chubni<Chuble:
-       Chub.append(int(Big_Chub))
-       Chuble=Big_Chub+Little_Chub
-       Big_Chub=Little_Chub
-       Little_Chub=Chuble
-       Chubni+=1
+      Chub.append(int(Big_Chub))
+      Chuble=Big_Chub+Little_Chub
+      Big_Chub=Little_Chub
+      Little_Chub=Chuble
+      Chubni+=1
 print (Chub)
 _=plt.plot(Chub)
