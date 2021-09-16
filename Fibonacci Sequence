@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(15,5))
+Chuble=[]
+Chub=0
+Little_Chub=0
+Big_Chub=1
+while(Chub<50):
+  Chuble.append(int(Little_Chub))
+  print (Little_Chub)
+  Big_Chub=Little_Chub+Big_Chub
+  Little_Chub=Big_Chub+Little_Chub
+  Chub=Chub+1
+plt.plot(Chuble)
+print(Chuble)
