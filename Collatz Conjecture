@@ -8,6 +8,6 @@ while(num!=1):
     num=num/2
   else:
     num=num*3+1
-mylist.append(1) 
+mylist.append(1)
 plt.plot(mylist)
 print(mylist)
